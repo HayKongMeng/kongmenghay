@@ -1,0 +1,251 @@
+body{
+    font-family: "Montserrat",sans-serif;
+    user-select: none;
+}
+/* #title{
+    background-color: #ff4c68;
+    color: #fff;
+} */
+/* #title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: left;
+} */
+.navbar-brand .navbar-dark{
+    font-family: "Montserrat",sans-serif;
+}
+.color-section{
+    padding:  7% 15%;
+    background-color: #1B2430;
+    color: #fff;
+    text-align: center;
+}
+.white-section{
+    position: relative;
+    padding: 7% 15%;
+    background-color: white;
+    text-align: center;
+}
+h3{
+    font-family: "Montserrat";
+    /* font-size: 3rem; */
+    line-height: 1.5;
+    font-weight: 900;  
+    /* font-size: 1.5rem; */
+}
+ .title-heading, .about-me{
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+    
+}
+.recently-project{
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.title-home-page{
+    font-family: sans-serif;
+}
+
+.navbar{
+    padding-bottom: 4.5rem;
+}
+.navbar-brand{
+    font-family: "Montserrat";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.name-highligh{
+    color: yellowgreen;
+}
+.nav-item{ 
+    padding: 0 20px;
+    
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    
+}
+@keyframes slideTop {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+.download-button:hover{
+    background-color: #A367B1;
+}
+.title-image{
+    width: 350px;
+    /* padding-left: 10%; */
+    border-radius: 50%;
+    /* transform: rotate(30deg); */
+    /* position: absolute; */
+    right: 30%;
+    opacity: 0;
+    animation: floatImg 2s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.title-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes floatImg {
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-24px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* #body-web{
+    position: relative;
+    padding: 7% 15%;
+    background-color: white;
+} */
+
+p{
+    color: #8f8f8f;
+}
+.feature-box{
+    text-align: center;
+}
+.icon:hover{
+    color: #ff4c68;
+}
+/* Testimonials Section*/
+#testimonials{
+      padding: 7% 15%;
+      /* background-color: #ff4c68;
+      color: #fff; */
+      text-align: center;
+      pointer-events: none;
+}
+.testimonials-img{
+    border-radius: 50%;
+    /* margin: 3% 5% ; */
+    width: 100px;
+    
+}
+/* press section */
+#press{
+    text-align: center;
+    padding: 3%;
+}
+.press-logo{
+    width: 200px;
+    margin: 20px 20px 20px;
+}
+
+/* Princing */
+
+/* #Pricing{
+    margin: 100px;
+} */
+/* .pricing-column{
+    padding: 20px;
+} */
+
+@media (max-width : 1000px) {
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        margin-top: 20px;
+        
+    }
+    .nav-link{
+        font-size: 1.2rem;
+        font-family: "Montserrat";
+        opacity: 0;
+        animation: slideTop .5s ease forwards;
+        animation-delay: 1s;
+        
+    }
+    .color-section{
+        padding:  3% 8%;
+        background-color: #1B2430;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+    }
+    .recently-project{
+        font-family: "Montserrat";
+        font-size: 3rem;
+        line-height: 0.5;
+        font-weight: bold;
+        margin: 20px;
+    }
+   .demo{
+        width: 200;
+        height: 200;
+    }
+}
+@media only screen 
+    and (min-width : 300px) 
+    and (max-width : 500px)
+{
+    .title-image{
+        width: 200px;
+        /* border-radius: 50%;
+        right: 30%;
+        opacity: 0;
+        animation: floatImg 2s ease-in-out infinite;
+        animation-delay: 1s; */
+    }
+    .recently-project{
+        font-family: "Montserrat";
+        font-size: 3rem;
+        line-height: 1.5;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+    .download-button{
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+}
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:portrait) 
+{
+    .title-image{
+        width: 350px;
+        margin-left: 50%;
+    }
+}
+
+
+#footer{
+    background-color: white;
+    text-align: center;
+    padding: 3% 7%;
+}
+.social-icon{
+    margin: 10px 10px;
+}
+
